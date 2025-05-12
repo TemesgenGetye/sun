@@ -1,0 +1,68 @@
+{
+  "expo": {
+    "scheme": "myapp",
+    "web": {
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      [
+        "@react-native-firebase/app",
+        {
+          "ios_google_services_file": "./GoogleService-Info.plist"
+        }
+      ],
+      [
+        "@react-native-firebase/messaging",
+        {
+          "auto_init_enabled": true
+        }
+      ]
+    ],
+    "name": "SunShine Meri Luke",
+    "slug": "sunshine-meri-luke",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "bundleIdentifier": "Tera.compound",
+      "supportsTablet": true,
+      "infoPlist": {
+        "UIBackgroundModes": [
+          "remote-notification"
+        ],
+        "NSUserNotificationUsageDescription": "We need to send you notifications about important updates and announcements."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "et.tera.compound_management_system",
+      "googleServicesFile": "./google-services.json"
+    },
+    "experiments": {
+      "newArchEnabled": true,
+      "tsconfigPaths": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "e70a8201-28b1-4e9a-9755-6fc836c3425f"
+      }
+    }
+  }
+}
